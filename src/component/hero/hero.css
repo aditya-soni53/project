@@ -1,0 +1,102 @@
+/* HeroSection.css */
+.hero-section {
+  background-color: #0a192f;
+  padding: 2rem 0;
+}
+
+.tech-tag {
+  background-color: #ffc107;
+  color: #000;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.hero-content {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ebfef6;
+}
+
+.free-trial-btn {
+  background: #88e64a;
+  border-radius: 8px;
+  color: #1b4200 !important;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.free-trial-btn::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+  content: "";
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
+
+.free-trial-btn:hover::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+  background-color: #74cc3a;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.relative-set {
+  z-index: 99999;
+  bottom: 50px;
+}
+
+.hero-image {
+  height: 42vh;
+  background-color: #eef0f1;
+  border-radius: 26px;
+  position: relative;
+  bottom: 50px;
+  background-image: url("../../assets/homevideo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.play-btn {
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  padding-top: 15px;
+  box-shadow: 0 0 0 0 #1b4200;
+  animation: button-ripple 3s infinite ease-out;
+  /* opacity: 0.6; */
+  color: #1b4200;
+  fill: #1b4200;
+  background-color: #88e64a;
+}
+
+.text-heaing {
+    font-size: 14px;
+    font-weight: 300;
+    color: #131211;
+}
+
+@keyframes button-ripple {
+  70% {
+    box-shadow: 0 0 0 15px #1b4200;
+    /* opacity: 0.25; */
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 #1b4200;
+    /* opacity: 0; */
+  }
+}
+
+@media (max-width: 991.98px) {
+  .illustration-container {
+    max-width: 400px;
+  }
+}

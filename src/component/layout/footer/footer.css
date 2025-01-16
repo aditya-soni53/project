@@ -1,0 +1,110 @@
+.footer-section {
+  background-image: linear-gradient(0deg, #0b2230 45%, #88e64a00 33%);
+  background: #0b2230;
+}
+
+.footer-content {
+  border-block: 1px solid #ebfef614;
+}
+
+.footer-content-title {
+  color: #bdc2c1;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.footer-content-details {
+  color: #bdc2c1;
+}
+
+.footer-icon {
+  color: #88e64a;
+  fill: #88e64a;
+  background-color: #88e64a2e;
+  border-radius: 300px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.footer-nav_links-grid {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+
+.quick-links-heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.company-quick_links {
+  color: #bdc2c1;
+}
+
+.company-quick_links li a {
+  text-decoration: none;
+}
+
+.company-quick_links ul li:hover {
+  color: #88e64a;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-logo {
+  border-block: 1px solid #ebfef614;
+}
+
+.footer-logo-text {
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #ebfef6;
+}
+
+.slider-img {
+  width: 60px !important;
+}
+
+.footer-copyright-text h2 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #bdc2c1;
+}
+
+.footer-copyright-name {
+  font-size: 14px;
+  font-weight: 400;
+  color: #88E64A;
+}
+
+.footer-other-links {
+  color: #BDC2C1;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-nav_links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+
+@media screen and (max-width: 375px) {
+  .slider-img {
+    width: 50px !important;
+  }
+}
+
+.img-slider .slick-slide {
+  padding: 0 10px; /* Adjust the padding to match centerPadding */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.slider-img {
+  width: 100%; /* Ensure images take up the full width of their container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Block-level ensures no inline spacing issues */
+}
+.img-slider {
+  width: 100%; /* Ensure it takes the full width */
+  overflow: hidden; /* Prevent slides from overflowing */
+}
