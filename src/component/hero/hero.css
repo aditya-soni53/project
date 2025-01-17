@@ -83,6 +83,14 @@
     color: #131211;
 }
 
+.brand-logos {
+  width: 80%;
+}
+
+.brand-img {
+  width: 150px !important;
+}
+
 @keyframes button-ripple {
   70% {
     box-shadow: 0 0 0 15px #1b4200;
@@ -98,5 +106,23 @@
 @media (max-width: 991.98px) {
   .illustration-container {
     max-width: 400px;
+  }
+
+  .brand-logos {
+    width: 90%;
+  }
+
+  .brand-img {
+    width: 70px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .brand-logos {
+    width: 100%;
+  }
+
+  .brand-img {
+    width: 70px !important;
   }
 }

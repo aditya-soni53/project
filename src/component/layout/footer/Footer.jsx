@@ -3,8 +3,6 @@ import './footer.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import logo from '../../../assets/logo/tech-startup-n1ew.svg'
 import img1 from '../../../assets/footer-slider/Card1.webp'

@@ -1,0 +1,15 @@
+.card-hover:hover {
+    background-color: #88e64a2e !important;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.cus-hover {
+    width: 110px;
+}
+
+.cus-hover:hover {
+    color: #88E64A !important;
+    fill: #88E64A;
+    transition: color 0.3s ease-in-out;
+}

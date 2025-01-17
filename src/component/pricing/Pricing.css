@@ -1,0 +1,68 @@
+.pricing-section {
+  background-color: #0b2230;
+  /* height: 28rem; */
+  /* margin-bottom: 200px; */
+}
+
+.pricing-wrapper {
+    background-color: #fff;
+}
+
+.pricing-container {
+    position: relative;
+    top: -150px;
+    z-index: 999;
+}
+
+.discount-price {
+  padding: 6px 12px 5px 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #88e64a2e;
+  border-radius: 99px;
+  width: fit-content;
+}
+
+.price-heading {
+    color: #131211;
+    font-size: 28px;
+    font-weight: 700
+}
+
+.price-details {
+    font-size: 16px;
+    font-weight: 500;
+    color: #575465;
+}
+
+.pricing-price {
+    font-size: 42px;
+    font-weight: 700;
+    color: #0B2230;
+}
+
+.pricing-month {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.includes-everything {
+    color: #131211;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.price-desc {
+    font-size: 14px;
+    font-weight: 600;
+    color: #131211;
+}
+
+.get-started {
+    width: fit-content;
+}
+
+
+.pricing-card:hover {
+    box-shadow: 0 0 20px #88E64A;
+}

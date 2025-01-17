@@ -1,0 +1,36 @@
+.reviews-heading {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #131211;
+    width: 70%;
+}
+
+.reviews-description {
+    width: 70%;
+    margin-left: auto;
+}
+
+.reviews-card-name {
+    font-size: 16px;
+    color: #0B2230;
+    font-weight: 600;
+}
+
+.client-say {
+    font-size: 18px;
+    color: #131211;
+    font-weight: 500;
+}
+
+/* media query for mobile */
+
+@media screen and (max-width: 767px) {
+    .reviews-heading {
+        width: 100%;
+    }
+
+    .reviews-description {
+        width: 100%;
+    }
+}

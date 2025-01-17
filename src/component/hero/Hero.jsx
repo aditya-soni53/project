@@ -2,8 +2,57 @@ import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import './hero.css'
+import Slider from "react-slick";
+import img1 from '../../assets/brand/new-Gourmet-helpdesklatest.png'
+import img2 from '../../assets/brand/new-Harvest-helpdesklatest.png'
+import img3 from '../../assets/brand/new-Lunaxy-helpdesklatest.png'
+import img4 from '../../assets/brand/new-mrbeat.png'
+import img5 from '../../assets/brand/new-Quantum-helpdesklatest.png'
+import img6 from '../../assets/brand/new-Runwaaay-helpdesklatest.png'
+import img7 from '../../assets/brand/new-Urban-helpdesklatest.png'
 
 const Hero = () => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    centerMode: true, // Enables center mode
+    centerPadding: "10px", // Space on the left and right of each slide
+    responsive: [
+      {
+        breakpoint: 1024, // For tablets and smaller
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "20px",
+        },
+      },
+      {
+        breakpoint: 320, // For mobile
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "30px", // Adjust as needed
+        },
+      },
+      {
+        breakpoint: 425, // For mobile
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "30px", // Adjust as needed
+        },
+      },
+    ],
+  };
   return (
     <section>
       <div className="hero-section text-white py-5 px-4">
@@ -50,6 +99,17 @@ const Hero = () => {
         </div>
         <div className="">
           <h2 className="text-center text-heaing">Trusted by 100,000+ teams globally at innovative companies</h2>
+        </div>
+        <div className="brand-logos mx-auto my-4">
+          <Slider {...settings}>
+            <img src={img1} alt="" className='brand-img' />
+            <img src={img2} alt="" className='brand-img' />
+            <img src={img3} alt="" className='brand-img' />
+            <img src={img4} alt="" className='brand-img' />
+            <img src={img5} alt="" className='brand-img' />
+            <img src={img6} alt="" className='brand-img' />
+            <img src={img7} alt="" className='brand-img' />
+          </Slider>
         </div>
       </div>
     </section>
