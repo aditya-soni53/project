@@ -84,6 +84,7 @@
   width: 100%;
   background-color: #74cc3a;
   z-index: 1;
+  border-radius: 8px;
 }
 
 .mobile-menu-box {

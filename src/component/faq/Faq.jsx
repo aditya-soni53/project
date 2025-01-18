@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './faq.css'
+import AOS from 'aos';
+
 
 const faqItems = [
     {
@@ -25,6 +27,8 @@ const faqItems = [
 ];
 
 const Faq = () => {
+    
+    AOS.init();
 
     const [activeIndex, setActiveIndex] = useState(null);
 
@@ -39,22 +43,22 @@ const Faq = () => {
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="pe-2 pe-md-5 ps-2">
-                                    <div className="">
+                                    <div className="" data-aos="fade-right" data-aos-duration="1000">
                                         <span className="tech-tag px-3 py-1">FAQs</span>
                                     </div>
-                                    <div className="mt-3">
+                                    <div className="mt-3" data-aos="fade-right" data-aos-duration="1300">
                                         <h2 className='faq-heading'>
                                             Frequently asked questions
                                         </h2>
-                                        <p className='faq-para mt-3 mb-4'>Discover our help desk FAQs to learn how we efficiently address your technical issues, ensuring you receive the support needed to stay productive and focused.</p>
-                                        <a href="#" className="text-decoration-none view-all-btn position-relative get-started-btn px-2 py-2 px-md-4 py-md-2 mt-4">
+                                        <p data-aos="fade-right" data-aos-duration="1600" className='faq-para mt-3 mb-4'>Discover our help desk FAQs to learn how we efficiently address your technical issues, ensuring you receive the support needed to stay productive and focused.</p>
+                                        <a data-aos="fade-right" data-aos-duration="1900" href="#" className="text-decoration-none view-all-btn position-relative get-started-btn px-2 py-2 px-md-4 py-md-2 mt-4">
                                             <span className='position-relative z-2'>View All Questions</span>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-md-6 mt-5 mb-4 mt-md-0 mb-md-0">
-                                <div className="card">
+                                <div className="card" data-aos="fade-left" data-aos-duration="1000">
                                     <div className="card-body">
                                         <div className="accordion">
                                             {faqItems.map((item, index) => (

@@ -6,9 +6,11 @@ import Footer from "./component/layout/footer/Footer"
 import Header from "./component/layout/header/Header"
 import Pricing from "./component/pricing/Pricing"
 import Reviews from "./component/reviews/Reviews"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
-
+  AOS.init();
   return (
     <>
       <Header />

@@ -12,8 +12,11 @@ import img4 from '../../../assets/footer-slider/Card4.webp'
 import img5 from '../../../assets/footer-slider/Card5.webp'
 import img6 from '../../../assets/footer-slider/Card6.webp'
 import img7 from '../../../assets/footer-slider/Card7.webp'
+import AOS from 'aos';
+
 
 const Footer = () => {
+  AOS.init();
 
   const settings = {
     dots: false,
@@ -48,22 +51,20 @@ const Footer = () => {
     ],
   };
 
-
-
   return (
     <footer className="footer-section">
       <div className="free-trial-section">
         <div className="px-4">
           <div className="wrapper py-5 bg-zenix_dark rounded-3 free-trial-bg-img">
             <div className="free-trial-container d-flex flex-column row-gap-3 mx-auto">
-              <div className="text-center">
+              <div className="text-center" data-aos="fade-up" data-aos-duration="1000">
                 <span>30 Day Free Trial</span>
               </div>
-              <h2 className="free-trial-heading text-center">Join the future of technology!</h2>
-              <p className='free-trial-para text-white text-center px-2'>Witness firsthand the user appreciation for our uncomplicated ticketing system in their daily activities.</p>
+              <h2 data-aos="fade-up" data-aos-duration="1300" className="free-trial-heading text-center">Join the future of technology!</h2>
+              <p data-aos="fade-up" data-aos-duration="1600" className='free-trial-para text-white text-center px-2'>Witness firsthand the user appreciation for our uncomplicated ticketing system in their daily activities.</p>
               <div className="d-flex justify-content-center gap-3">
-                <button className='px-2 px-md-4 py-2 start_btn'>Start Free Trial</button>
-                <button className='px-2 px-md-4 py-2 book_btn'>Book a Demo</button>
+                <button data-aos="fade-left" data-aos-duration="1900" className='px-2 px-md-4 py-2 start_btn'>Start Free Trial</button>
+                <button data-aos="fade-right" data-aos-duration="2100" className='px-2 px-md-4 py-2 book_btn'>Book a Demo</button>
               </div>
             </div>
           </div>

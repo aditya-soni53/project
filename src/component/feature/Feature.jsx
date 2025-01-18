@@ -5,6 +5,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import img1 from '../../assets/feature/feature-1.svg'
 import img2 from '../../assets/feature/feature-2.svg'
 import img3 from '../../assets/feature/feature-3.svg'
+import AOS from 'aos';
 
 const featuresData = [
     {
@@ -40,11 +41,14 @@ const featuresData = [
 ]
 
 const Feature = () => {
+
+    AOS.init();
+
     return (
         <section className='feature-section'>
             <div className="py-5 px-4">
                 <div className="wrapper">
-                    <div className="mb-4 text-center">
+                    <div className="mb-4 text-center" data-aos="fade-up" data-aos-duration="1000">
                         <span className="tech-tag px-3 py-1">Features</span>
                         <div className="feature-details-box d-flex flex-column row-gap-3 mx-auto mt-4">
                             <div className="feature-title-box">
@@ -60,12 +64,12 @@ const Feature = () => {
                     <div className="feature-details mt-5">
                         {featuresData.map((item) => (
                             <div key={item.id} className={`row align-items-center mb-4 mb-md-5 pb-md-5 ${item.rowReverse ? 'flex-row-reverse' : ''}`}>
-                                <div className="col-md-6">
+                                <div className="col-md-6" data-aos="fade-left" data-aos-duration="1000">
                                     <div className="feature-img">
                                         <img src={item.img} className='w-100' alt="" />
                                     </div>
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-md-6" data-aos="fade-right" data-aos-duration="1200">
                                     <div className="feature-box px-md-5 py-2">
                                         <div className="d-flex flex-column row-gap-1 row-gap-md-3">
                                             <div className="">

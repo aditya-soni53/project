@@ -7,6 +7,8 @@ import img3 from '../../assets/keyFeature/key-feature3.svg'
 import img4 from '../../assets/keyFeature/key-feature4.svg'
 import img5 from '../../assets/keyFeature/key-feature5.svg'
 import img6 from '../../assets/keyFeature/key-feature6.svg'
+import AOS from 'aos';
+
 
 const newFeatures = [
     {
@@ -48,11 +50,14 @@ const newFeatures = [
 ]
 
 const KeyFeature = () => {
+
+    AOS.init();
+
     return (
         <section className='key_feature-section'>
             <div className="py-5 px-4">
                 <div className="wrapper">
-                    <div className="mb-4 text-center">
+                    <div className="mb-4 text-center" data-aos="fade-up" data-aos-duration="1000">
                         <span className="tech-tag px-3 py-1">Key Features</span>
                         <div className="feature-details-box d-flex flex-column row-gap-3 mx-auto mt-4">
                             <div className="feature-title-box">
@@ -66,7 +71,7 @@ const KeyFeature = () => {
                         </div>
                     </div>
                     <div className="new_feature-details mt-5">
-                        <div className="row row-gap-3">
+                        <div className="row row-gap-3" data-aos="fade-down" data-aos-duration="1500">
                             {newFeatures.map((item) => (
                                 <div key={item.id} className="col-md-4">
                                     <div className="card card-hover h-100 border-0 bg-light">

@@ -2,6 +2,8 @@ import React from 'react';
 import './Pricing.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckCircle, } from '@fortawesome/free-regular-svg-icons';
+import AOS from 'aos';
+
 
 const pricingData = [
     {
@@ -43,7 +45,7 @@ const Pricing = () => {
         <section className='pricing-section' >
             <div className="py-5 px-4">
                 <div className="wrapper">
-                    <div className="mb-5 pb-5 text-center">
+                    <div className="mb-5 pb-5 text-center" data-aos="fade-up" data-aos-duration="1000">
                         <span className="tech-tag px-3 py-1">Pricing plans</span>
                         <div className="feature-details-box d-flex flex-column row-gap-3 mx-auto mt-4">
                             <div className="feature-title-box">
@@ -61,7 +63,7 @@ const Pricing = () => {
             <div className="px-4 pricing-wrapper">
                 <div className="wrapper">
                     <div className="pricing-container">
-                        <div className="row row-gap-4">
+                        <div className="row row-gap-4" data-aos="fade-up-left" data-aos-duration="1300">
                             {pricingData.map(item => (
                                 <div key={item.id} className="col-md-4">
                                     <div className="pricing-card">
