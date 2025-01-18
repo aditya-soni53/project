@@ -1,6 +1,108 @@
 .footer-section {
   background-image: linear-gradient(0deg, #0b2230 45%, #88e64a00 33%);
   background: #0b2230;
+  margin-top: 10rem;
+}
+
+.free-trial-section {
+  position: relative;
+  bottom: 8rem
+}
+
+.free-trial-container {
+  width: 50%;
+}
+
+.free-trial-container span {
+  padding: 6px 12px 6px 12px;
+  background-color: #ebfef6;
+  border-radius: 99px;
+  width: fit-content;
+  color: #1b4200;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.free-trial-heading {
+  font-size: 48px;
+  font-weight: 600;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.free-trial-para {
+  font-size: 18px;
+}
+
+.start_btn {
+  background-color: #74cc3a;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1; /* Lower z-index to allow pseudo-element visibility */
+  overflow: hidden; /* Ensures the pseudo-element is contained within the button */
+  color: white; /* Add contrast for text */
+  border: none; /* Optional: to remove any default border */
+  cursor: pointer; /* Indicates interactivity */
+}
+
+.start_btn::after {
+  position: absolute;
+  top: 0;
+  left: 0; /* Ensure alignment starts from the left */
+  height: 100%;
+  width: 0; /* Starts with no width */
+  z-index: -1; /* Stays behind the button text */
+  content: "";
+  background-color: #5daf2c; /* Slightly darker green for effect */
+  border-radius: 8px; /* Match button's border radius */
+  transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1); /* Smooth width transition */
+}
+
+.start_btn:hover::after {
+  width: 100%; /* Expands to full width on hover */
+}
+
+.start_btn:hover {
+  color: white; /* Ensure text color remains visible on hover */
+}
+
+.book_btn {
+  background-color: #ebfef6;
+  border-radius: 8px;
+  position: relative;
+  z-index: 1; /* Lower z-index to allow pseudo-element visibility */
+  overflow: hidden; /* Ensures the pseudo-element is contained within the button */
+  border: none; /* Optional: to remove any default border */
+  cursor: pointer;
+}
+
+.book_btn::after {
+  position: absolute;
+  top: 0;
+  left: 0; /* Ensure alignment starts from the left */
+  height: 100%;
+  width: 0; /* Starts with no width */
+  z-index: -1; /* Stays behind the button text */
+  content: "";
+  background-color: #5daf2c; /* Slightly darker green for effect */
+  border-radius: 8px; /* Match button's border radius */
+  transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1); /* Smooth width transition */
+}
+
+.book_btn:hover::after {
+  width: 100%; /* Expands to full width on hover */
+}
+
+.book_btn:hover {
+  color: white; /* Ensure text color remains visible on hover */
+}
+
+.free-trial-bg-img {
+  background-image: url("../../../assets/bg-image.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid #ebfef60f;
 }
 
 .footer-content {
@@ -74,18 +176,17 @@
 .footer-copyright-name {
   font-size: 14px;
   font-weight: 400;
-  color: #88E64A;
+  color: #88e64a;
 }
 
 .footer-other-links {
-  color: #BDC2C1;
+  color: #bdc2c1;
 }
 
 @media screen and (max-width: 768px) {
   .footer-nav_links-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
 }
 
 @media screen and (max-width: 375px) {
@@ -107,4 +208,18 @@
 .img-slider {
   width: 100%; /* Ensure it takes the full width */
   overflow: hidden; /* Prevent slides from overflowing */
+}
+
+@media screen and (max-width: 767px) {
+  .free-trial-container {
+    width: 100%;
+  }
+
+  .free-trial-heading {
+    font-size: 28px;
+  }
+
+  .free-trial-para {
+    font-size: 14px;
+  }
 }

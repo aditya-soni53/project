@@ -28,6 +28,7 @@
 @media screen and (max-width: 767px) {
     .reviews-heading {
         width: 100%;
+        font-size: 35px;
     }
 
     .reviews-description {

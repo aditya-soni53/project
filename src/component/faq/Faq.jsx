@@ -38,7 +38,7 @@ const Faq = () => {
                     <div className="wrapper pt-4 p-2 p-md-5 bg-zenix_dark faq-container">
                         <div className="row">
                             <div className="col-md-6">
-                                <div className="pe-5 ps-2">
+                                <div className="pe-2 pe-md-5 ps-2">
                                     <div className="">
                                         <span className="tech-tag px-3 py-1">FAQs</span>
                                     </div>
@@ -83,23 +83,7 @@ const Faq = () => {
                     </div>
                 </div>
             </section>
-            <div className="free-trial-section">
-                <div className="px-4 py-4">
-                    <div className="wrapper py-5 bg-zenix_dark rounded-3">
-                        <div className="free-trial-container d-flex flex-column row-gap-3 mx-auto">
-                            <div className="text-center">
-                                <span>30 Day Free Trial</span>
-                            </div>
-                            <h2 className="free-trial-heading text-center">Join the future of technology!</h2>
-                            <p className='free-trial-para text-white text-center px-2'>Witness firsthand the user appreciation for our uncomplicated ticketing system in their daily activities.</p>
-                            <div className="d-flex justify-content-center gap-3">
-                                <button className='px-4 py-2 start_btn'>Start Free Trial</button>
-                                <button className='px-4 py-2 book_btn'>Book a Demo</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </>
     );
 }

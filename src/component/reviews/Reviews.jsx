@@ -55,7 +55,7 @@ const Reviews = () => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div className="p-5 reviews-description">
+                            <div className="p-3 p-md-5 reviews-description">
                                 <p>
                                     Witness firsthand the user appreciation for our uncomplicated ticketing system in their daily activities.
                                 </p>

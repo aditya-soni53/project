@@ -47,11 +47,28 @@ const Footer = () => {
       },
     ],
   };
-  
-  
+
+
 
   return (
     <footer className="footer-section">
+      <div className="free-trial-section">
+        <div className="px-4">
+          <div className="wrapper py-5 bg-zenix_dark rounded-3 free-trial-bg-img">
+            <div className="free-trial-container d-flex flex-column row-gap-3 mx-auto">
+              <div className="text-center">
+                <span>30 Day Free Trial</span>
+              </div>
+              <h2 className="free-trial-heading text-center">Join the future of technology!</h2>
+              <p className='free-trial-para text-white text-center px-2'>Witness firsthand the user appreciation for our uncomplicated ticketing system in their daily activities.</p>
+              <div className="d-flex justify-content-center gap-3">
+                <button className='px-2 px-md-4 py-2 start_btn'>Start Free Trial</button>
+                <button className='px-2 px-md-4 py-2 book_btn'>Book a Demo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="px-4">
         <div className="footer-content wrapper">
           <div className="row py-3">
@@ -166,7 +183,7 @@ const Footer = () => {
                 <h2 className='footer-logo-text mb-0'>Innovating tomorrow, today.</h2>
               </div>
             </div>
-            <div className="col-md-5" style={{marginTop: "20px"}}>
+            <div className="col-md-5" style={{ marginTop: "20px" }}>
               <div className="img-slider pt-1">
                 <Slider {...settings}>
                   <img src={img1} alt="" className='slider-img' />
