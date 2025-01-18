@@ -4,6 +4,7 @@ import Hero from "./component/hero/Hero"
 import KeyFeature from "./component/keyFeature/KeyFeature"
 import Footer from "./component/layout/footer/Footer"
 import Header from "./component/layout/header/Header"
+import ScrollToTop from "./component/layout/scrollToTop/ScrollToTop"
 import Pricing from "./component/pricing/Pricing"
 import Reviews from "./component/reviews/Reviews"
 import AOS from 'aos';
@@ -14,7 +15,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="main-container">
         <Hero />
         <Feature/>
         <KeyFeature/>
@@ -23,6 +24,7 @@ function App() {
         <Faq/>
       </main>
       <Footer />
+      <ScrollToTop/>
     </>
   )
 }
